@@ -6,6 +6,7 @@ let verb       = "sprints";
 let place      = "savanna";
 let adjective2 = "endless";
 let noun2      = "horizon";
+let firstStory = `The ${adjective} ${noun} ${verb} across the ${place} toward the ${adjective2} ${noun2}.`;
 
 // ── DOM refs ──────────────────────────────────────────────────────────────────
 const elDays   = document.getElementById('days');
