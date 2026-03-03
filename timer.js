@@ -1,5 +1,12 @@
 'use strict';
 
+let adjective  = "blazing";
+let noun       = "cheetah";
+let verb       = "sprints";
+let place      = "savanna";
+let adjective2 = "endless";
+let noun2      = "horizon";
+
 // ── DOM refs ──────────────────────────────────────────────────────────────────
 const elDays   = document.getElementById('days');
 const elHours  = document.getElementById('hours');
