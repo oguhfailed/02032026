@@ -1,0 +1,24 @@
+#!/usr/bin/env sh
+# openclaw - open the Timer App in the default browser
+
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+APP="$SCRIPT_DIR/timer-app.html"
+
+if [ ! -f "$APP" ]; then
+  echo "openclaw: timer-app.html not found in $SCRIPT_DIR" >&2
+  exit 1
+fi
+
+# Try platform-appropriate open commands
+if command -v open >/dev/null 2>&1; then
+  open "$APP"
+elif command -v xdg-open >/dev/null 2>&1; then
+  xdg-open "$APP"
+elif command -v wslview >/dev/null 2>&1; then
+  wslview "$APP"
+else
+  echo "openclaw: cannot find a browser launcher (tried open, xdg-open, wslview)" >&2
+  echo "Open this file manually in your browser:" >&2
+  echo "  $APP" >&2
+  exit 1
+fi
