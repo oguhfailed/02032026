@@ -1,0 +1,15 @@
+{
+  "name": "openclaw",
+  "version": "1.0.0",
+  "description": "A command-line timer with days/hours/min/sec/ms display",
+  "bin": {
+    "openclaw": "./bin/openclaw.js"
+  },
+  "scripts": {
+    "start": "node bin/openclaw.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT"
+}
