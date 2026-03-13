@@ -1,0 +1,16 @@
+{
+  "name": "openclaw",
+  "version": "1.0.0",
+  "description": "Open the Timer App in the default browser",
+  "bin": {
+    "openclaw": "./openclaw"
+  },
+  "files": [
+    "openclaw",
+    "timer-app.html",
+    "index.html",
+    "style.css",
+    "timer.js"
+  ],
+  "license": "MIT"
+}
